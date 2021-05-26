@@ -1,0 +1,11 @@
+ [Logger] Sun Nov 29 21:04:36 EET 2020: INFO -auth n1@mail.com 1
+ [Logger] Sun Nov 29 21:04:39 EET 2020: INFO Noi
+ [Logger] Sun Nov 29 21:04:43 EET 2020: INFO Miten menee
+ [Logger] Sun Nov 29 21:04:36 EET 2020: INFO -auth n1@mail.com 1
+ [Logger] Sun Nov 29 21:04:39 EET 2020: INFO Noi
+ [Logger] Sun Nov 29 21:04:43 EET 2020: INFO Miten menee
+ [Logger] Sun Nov 29 21:04:36 EET 2020: INFO -auth n1@mail.com 1
+ [Logger] Sun Nov 29 21:04:39 EET 2020: INFO Noi
+ [Logger] Sun Nov 29 21:04:43 EET 2020: INFO Miten menee
+ [Logger] Sun Nov 29 21:04:36 EET 2020: INFO -auth n1@mail.com 1
+
