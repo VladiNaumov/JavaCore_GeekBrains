@@ -1,6 +1,6 @@
 package com.naumDeveloper.javaCore3.unit_4.homeWork;
 
-public class ThreadB extends java.lang.Thread implements Runnable{
+public class ThreadB extends Thread implements Runnable{
 
 
     public ThreadB(SinhronaizerManager manager) {

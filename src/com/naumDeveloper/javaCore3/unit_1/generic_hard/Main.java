@@ -1,8 +1,9 @@
 package com.naumDeveloper.javaCore3.unit_1.generic_hard;
 
-import fi.lahti.unit_1.generic_hard.document.HtmlDocument;
-import fi.lahti.unit_1.generic_hard.document.HtmlDom;
-import fi.lahti.unit_1.generic_hard.document.MarkupDocument;
+
+import com.naumDeveloper.javaCore3.unit_1.generic_hard.document.HtmlDocument;
+import com.naumDeveloper.javaCore3.unit_1.generic_hard.document.HtmlDom;
+import com.naumDeveloper.javaCore3.unit_1.generic_hard.document.MarkupDocument;
 
 public class Main {
     public static void main(String[] args) {

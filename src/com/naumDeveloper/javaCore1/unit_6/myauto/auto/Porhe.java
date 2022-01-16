@@ -3,7 +3,7 @@ package com.naumDeveloper.javaCore1.unit_6.myauto.auto;
 
 import com.naumDeveloper.javaCore1.unit_6.myauto.audisystem.AudioSystem;
 import com.naumDeveloper.javaCore1.unit_6.myauto.gps.NavigationSystem;
-import fi.lahti.unit_6.myauto.gps.NavigationSystem;
+
 
 public class Porhe  implements Car{
 

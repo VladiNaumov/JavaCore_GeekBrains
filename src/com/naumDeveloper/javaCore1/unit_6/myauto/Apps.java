@@ -8,13 +8,10 @@ import com.naumDeveloper.javaCore1.unit_6.myauto.audisystem.Sony;
 import com.naumDeveloper.javaCore1.unit_6.myauto.auto.Audi;
 import com.naumDeveloper.javaCore1.unit_6.myauto.auto.Kia;
 import com.naumDeveloper.javaCore1.unit_6.myauto.auto.Lexus;
+import com.naumDeveloper.javaCore1.unit_6.myauto.auto.Porhe;
+import com.naumDeveloper.javaCore1.unit_6.myauto.gps.NavigationSystem;
 import com.naumDeveloper.javaCore1.unit_6.myauto.gps.Navitel;
-import fi.lahti.unit_6.myauto.auto.Audi;
-import fi.lahti.unit_6.myauto.auto.Kia;
-import fi.lahti.unit_6.myauto.auto.Lexus;
-import fi.lahti.unit_6.myauto.auto.Porhe;
-import fi.lahti.unit_6.myauto.gps.NavigationSystem;
-import fi.lahti.unit_6.myauto.gps.Navitel;
+
 
 public class Apps {
 

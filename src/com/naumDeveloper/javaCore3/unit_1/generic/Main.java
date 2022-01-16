@@ -1,9 +1,9 @@
 package com.naumDeveloper.javaCore3.unit_1.generic;
 
-import fi.lahti.unit_1.generic.document.BinaryDocument;
-import fi.lahti.unit_1.generic.document.HtmlDocument;
-import fi.lahti.unit_1.generic.document.PdfBinaryDocument;
-import fi.lahti.unit_1.generic.document.PdfDocument;
+import com.naumDeveloper.javaCore3.unit_1.generic.document.BinaryDocument;
+import com.naumDeveloper.javaCore3.unit_1.generic.document.HtmlDocument;
+import com.naumDeveloper.javaCore3.unit_1.generic.document.PdfBinaryDocument;
+import com.naumDeveloper.javaCore3.unit_1.generic.document.PdfDocument;
 
 import java.io.File;
 import java.util.ArrayList;

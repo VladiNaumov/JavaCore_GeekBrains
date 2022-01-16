@@ -1,6 +1,6 @@
 package com.naumDeveloper.javaCore3.unit_7.homework;
 
-import org.testng.annotations.BeforeSuite;
+
 
 import java.lang.reflect.Method;
 import java.util.HashSet;
@@ -23,6 +23,8 @@ import java.util.TreeMap;
 
 
 public class Main {
+
+    /*
     public static void main(String[] args) throws Exception {
         start(TestManager.class);
     }
@@ -74,4 +76,6 @@ public class Main {
         System.out.println(applicationOrder);
 
     }
+
+     */
 }

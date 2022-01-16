@@ -1,6 +1,5 @@
 package com.naumDeveloper.javaCore3.unit_1.homework.array;
 
-import fi.lahti.unit_1.homework.array.IArray;
 
 import java.util.ArrayList;
 

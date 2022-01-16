@@ -1,9 +1,10 @@
 package com.naumDeveloper.javaCore3.unit_7.homework;
 
-import org.testng.annotations.BeforeSuite;
+
 
 public class TestManager {
 
+    /*
     @AfterSuite
     private void finalizeMethod() {
         System.out.println("Unwinding after hard Test....");
@@ -37,4 +38,6 @@ public class TestManager {
     public void methodWithoutAnnotation() {
         System.out.println("I am sad, I don't have annotation");
     }
+
+     */
 }
