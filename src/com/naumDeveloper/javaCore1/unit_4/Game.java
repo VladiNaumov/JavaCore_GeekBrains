@@ -17,8 +17,8 @@ import java.util.Scanner;
 
 public class Game {
 
-   private int xArray;
-   private int yArray;
+    private int xArray;
+    private int yArray;
 
 
     // создание игровой карты (массива)
@@ -88,7 +88,7 @@ public class Game {
             x = random.nextInt(this.xArray);
             y = random.nextInt(this.xArray);
 
-            System.out.println("ХОД AI " + x  + " " + y);
+            System.out.println("ХОД AI " + x + " " + y);
 
         } while (field[x][y] != '-');
         field[x][y] = 'O';
@@ -96,7 +96,7 @@ public class Game {
 
 
     // метод окончание игры
-   static boolean isFinal(char[][] field, char sign) {
+    static boolean isFinal(char[][] field, char sign) {
         if (myIsWin(field, sign)) {
             String name = sign == 'X' ? "Vladimir" : "AI";
             System.out.println(String.format("%s won!", name));
@@ -109,8 +109,8 @@ public class Game {
         return false;
     }
 
-   
-    // проверка условий (ВТОРОЙ СПОСОБ)
+
+    // проверка условий (1)
     static boolean myIsWin(char[][] field, char sign) {
 
         boolean isWin = true;
@@ -163,6 +163,67 @@ public class Game {
 
         return isWin;
     }
+
+    // проверка условий (2)
+    static boolean checkWin(char[][] field, char sign) {
+        boolean farr[][] = new boolean[field.length][field.length];//логический массив
+        boolean diagonal = true;//проверка диагонали
+        boolean reDiagonal = true; //проверка обратной диагонали
+        boolean col;//проверка столбцов
+        boolean row;// проверка строк
+        boolean check = false;// общая проверка
+        for (int i = 0; i < farr.length; i++) {// перевод массива в булеан переменные
+            for (int j = 0; j < farr.length; j++) {
+                farr[i][j] = (field[i][j] == sign);
+
+            }
+
+        }
+        for (int i = 0; i < farr.length; i++) {
+            diagonal = diagonal & farr[i][i];
+            reDiagonal = reDiagonal & farr[i][farr.length - i - 1];
+        }
+        for (int i = 0; i < farr.length; i++) {
+            col = true;
+            row = true;
+            for (int j = 0; j < farr.length; j++) {
+                col = farr[j][i] & col;
+                row = farr[i][j] & row;
+            }
+            check = col | row | check;
+        }
+        check = check || diagonal || reDiagonal;
+
+        return check;
+    }
+
+/*
+    public static boolean checkWin(char symbol) {
+        for (int i = 0; i < map.length; i++) {
+            for (int j = 0; j <= 0; j++) {
+                if (map[i][j] == symbol && map[i][map[i].length - 2] == symbol && map[i][map[i].length - 1] == symbol) {
+                    return true;
+                } else if (map[j][i] == symbol && map[map[i].length - 2][i] == symbol && map[map[i].length - 1][i] == symbol) {
+                    return true;
+                } else if (map[j][j] == symbol && map[map[i].length - 2][map[i].length - 2] == symbol && map[map[i].length - 1][map[i].length - 1] == symbol) {
+                    return true;
+                } else if (map[j][map[i].length - 1] == symbol && map[map[i].length - 2][map[i].length - 2] == symbol && map[map[i].length - 1][j] == symbol) {
+                    return true;
+                }
+            }
+        }return false;
+    }
+
+    public static boolean checkWin(char symbol) {
+        for (int i = 0; i < map.length; i++){
+            for (int j = 0; j <= 0; j++){ if (map[i][j] == symbol && map[i][j + 1] == symbol && map[i][j + 2] == symbol){
+                return true; } else if (map[j][i] == symbol && map[j + 1][i] == symbol && map[j + 2][i] == symbol){
+                return true; } else if (map[j][j] == symbol && map[j + 1][j + 1] == symbol && map[j + 2][j + 2] == symbol){
+                return true; } else if (map[j][j + 2] == symbol && map[j + 1][j + 1] == symbol && map[j + 2][j] == symbol){
+                return true; } } } return false;
+    }
+
+ */
 
 
     static boolean isDraw(char[][] field) {
