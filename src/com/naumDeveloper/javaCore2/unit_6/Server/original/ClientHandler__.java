@@ -1,6 +1,6 @@
 package com.naumDeveloper.javaCore2.unit_6.Server.original;
 
-import org.example.Server;
+import com.naumDeveloper.javaCore2.unit_6.Server.Server;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;

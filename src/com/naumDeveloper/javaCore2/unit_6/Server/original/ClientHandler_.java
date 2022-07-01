@@ -1,5 +1,7 @@
 package com.naumDeveloper.javaCore2.unit_6.Server.original;
 
+import com.naumDeveloper.javaCore2.unit_6.Server.Server;
+
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;

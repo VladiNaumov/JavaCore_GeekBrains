@@ -28,34 +28,4 @@ public class TelephonBook {
        return myBook.get(name);
 
    }
-    public void printing(){
-         System.out.println("Nyt myBook on ..... " );
-        for(Map.Entry<String, Set<String>> entry : myBook.entrySet()){
-
-            System.out.printf("SukuNimi: %s, PuhelinNumerot: %s \n", entry.getValue(), entry.getKey());
-        }
-    }
-
- // не работает
-    public Set<String> getStreem(String name) {
-
-        System.out.println("****  Haetaan myBook: (SYSTEM .stream(): " + name);
-
-        String value = name;
-        String s = "";
-
-        Optional<String> result = myBook.entrySet()
-                .stream()
-                .filter(entry -> value.equals(entry.getValue()))
-                .map(Map.Entry::getKey)
-                .findFirst();
-
-        if (result.isPresent()) {
-            s = value;
-        }
-
-        return myBook.get(s);
-    }
-
-
-}
+ }

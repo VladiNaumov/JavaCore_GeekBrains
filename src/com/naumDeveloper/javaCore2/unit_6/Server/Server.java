@@ -1,6 +1,7 @@
 package com.naumDeveloper.javaCore2.unit_6.Server;
 
-import org.example.original.ClientHandler__;
+
+import com.naumDeveloper.javaCore2.unit_6.Server.original.ClientHandler__;
 
 import java.io.IOException;
 import java.net.ServerSocket;
@@ -40,9 +41,10 @@ public class Server {
         return true;
     }
 
-    public void subscribe(ClientHandler__ clientHandler__) {
-    }
 
     public void broadcastMessage(String s) {
+    }
+
+    public void subscribe(ClientHandler__ clientHandler__) {
     }
 }
