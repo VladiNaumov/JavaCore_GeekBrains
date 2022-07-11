@@ -1,8 +1,5 @@
-package com.naumDeveloper.testirovanie_upiter.test.java.HomeWork;
+package com.naumDeveloper.more.testirovanie_upiter.test.java.HomeWork;
 
-
-
-import java.util.stream.Stream;
 
 public class ArrListTest {
 

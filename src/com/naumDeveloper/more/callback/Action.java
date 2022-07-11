@@ -1,4 +1,4 @@
-package com.naumDeveloper.callback;
+package com.naumDeveloper.more.callback;
 
 @FunctionalInterface
 public interface Action {

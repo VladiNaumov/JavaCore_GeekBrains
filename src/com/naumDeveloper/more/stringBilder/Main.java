@@ -1,4 +1,4 @@
-package com.naumDeveloper.stringBilder;
+package com.naumDeveloper.more.stringBilder;
 
 public class Main {
 

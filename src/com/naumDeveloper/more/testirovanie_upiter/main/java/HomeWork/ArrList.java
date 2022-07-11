@@ -1,4 +1,4 @@
-package com.naumDeveloper.testirovanie_upiter.main.java.HomeWork;
+package com.naumDeveloper.more.testirovanie_upiter.main.java.HomeWork;
 
 import java.util.List;
 
