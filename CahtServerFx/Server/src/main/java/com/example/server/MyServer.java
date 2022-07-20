@@ -65,7 +65,6 @@ public class MyServer {
 
     // удаление отключившихся клиентов
     public synchronized void unSubscribe(ClientHandler handler) {
-       //TODO: нужно подключить данный метод (домашнее задание )
         clients.remove(handler);
     }
 
@@ -101,6 +100,23 @@ public class MyServer {
             client.sendMessage(sender.getUsername(), message);
         }
 
+    }
+	
+	 public synchronized void sendPrivateMessage(ClientHandler sender, String recipient, String privateMessage) throws IOException {
+        for (ClientHandler client : clients) {
+            if (client.getUsername().equals(recipient)) {
+                client.sendMessage(sender.getUsername(), privateMessage, true);
+            }
+        }
+    }
+
+    public synchronized void broadcastServerMessage(ClientHandler sender, String message) throws IOException {
+        for (ClientHandler client : clients) {
+            if (client == sender) {
+                continue;
+            }
+            client.sendServerMessage(message);
+        }
     }
 
 

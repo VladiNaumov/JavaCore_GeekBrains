@@ -17,10 +17,10 @@ public class ClientHandler {
     private static final String AUTHOK_CMD_PREFIX = "/authok"; // + username
     private static final String AUTHERR_CMD_PREFIX = "/autherr"; // + error message
     private static final String CLIENT_MSG_CMD_PREFIX = "/cMsg"; // + msg
+    private static final String SERVER_MSG_CMD_PREFIX = "/sMsg"; // + msg
     private static final String PRIVATE_MSG_CMD_PREFIX = "/pm"; // + username + msg
     private static final String STOP_SERVER_CMD_PREFIX = "/stop";
     private static final String END_CLIENT_CMD_PREFIX = "/end";
-
 
     private final MyServer myServer;
     private final Socket clientSocket;
@@ -45,6 +45,12 @@ public class ClientHandler {
                 authentication();
                 readMessage();
             } catch (IOException e) {
+                try {
+                    myServer.broadcastServerMessage(this, "Пользователь " + username + " отключился от чата");
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
+                myServer.unSubscribe(this);
                 e.printStackTrace();
             }
         }).start();
@@ -123,6 +129,9 @@ public class ClientHandler {
             myServer.subscribe(this);
             // это отправка в консоль на сервер
             System.out.println("Пользователь " + username + " подключился к чату");
+			
+			myServer.broadcastServerMessage(this, "Пользователь " + username + " подключился к чату");
+			
             return true;
 
         } else {
@@ -144,15 +153,24 @@ public class ClientHandler {
             System.out.println("message | " + username + ": " + message);
 
             String typeMessage = message.split("\\s+")[0];
+			
+			if (!typeMessage.startsWith("/")) {
+                System.out.println("Неверный запрос");
+            }
 
             switch (typeMessage) {
                 case STOP_SERVER_CMD_PREFIX -> myServer.stop();
                 case END_CLIENT_CMD_PREFIX -> closeConnection();
+                case CLIENT_MSG_CMD_PREFIX -> {
+                    String[] messageParts = message.split("\\s+", 2);
+                    myServer.broadcastMessage(this, messageParts[1]);}
                 case PRIVATE_MSG_CMD_PREFIX -> {
-                    //TODO HW -> отправка приватных сообщений
-                }
-                //рассылка сообщений клиентам
-                default -> myServer.broadcastMessage(this, message);
+                    String[] privateMessageParts = message.split("\\s+", 3);
+                    String recipient  = privateMessageParts[1];
+                    String privateMessage  = privateMessageParts[2];
+
+                    myServer.sendPrivateMessage(this, recipient, privateMessage);
+                } default -> System.out.println("Неверная команда");
             }
 
         }
@@ -163,8 +181,19 @@ public class ClientHandler {
         System.out.println(username + " отключился");
     }
 
+    public void sendServerMessage(String message) throws IOException {
+        out.writeUTF(String.format("%s %s", SERVER_MSG_CMD_PREFIX, message));
+    }
+
+    public void sendMessage(String sender, String message, Boolean isPrivate) throws IOException {
+        out.writeUTF(String.format("%s %s %s", isPrivate ?
+                PRIVATE_MSG_CMD_PREFIX
+                : CLIENT_MSG_CMD_PREFIX,
+                sender, message));
+    }
+
     public void sendMessage(String sender, String message) throws IOException {
-        out.writeUTF(String.format("%s %s %s", CLIENT_MSG_CMD_PREFIX, sender, message));
+        sendMessage(sender, message, false);
     }
 
     public String getUsername() {
