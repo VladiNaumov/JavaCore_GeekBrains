@@ -44,18 +44,21 @@ public class SignController {
             System.out.println("Ошибка ввода при аутентификации");
             System.out.println();
             startClient.showErrorAlert("Ошибка ввода при аутентификации", "Поля не должны быть пустыми");
-
             return;
         }
 
+        // ограничение длины логина и пароля
         if (login.length() > 32 || password.length() > 32) {
             startClient.showErrorAlert("Ошибка ввода при аутентификации", "Длина логина и пароля должны быть не более 32 символов");
             return;
         }
 
+        // какой ответ сервера после аутентификации
         String authErrorMessage = network.sendAuthMessage(login, password);
 
+        // проверка успешно ли прошла аутентификация или нет
         if (authErrorMessage == null) {
+            //вызов самого чата
             startClient.openChatDialog();
         } else {
             startClient.showErrorAlert("Ошибка аутентификации", authErrorMessage);
@@ -71,15 +74,9 @@ public class SignController {
         this.network = network;
     }
 
-    public Network getNetwork() {
-        return network;
-    }
-
     public void setStartClient(StartClient startClient) {
         this.startClient = startClient;
     }
 
-    public StartClient getStartClient() {
-        return startClient;
-    }
+
 }

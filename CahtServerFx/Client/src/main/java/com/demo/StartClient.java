@@ -33,21 +33,17 @@ public class StartClient extends Application {
     }
 
     private void openAuthDialog() throws IOException {
+        // открывает меню аутентификации
         FXMLLoader authLoader = new FXMLLoader(StartClient.class.getResource("auth-view.fxml"));
         authStage = new Stage();
         Scene scene = new Scene(authLoader.load(), 600, 400);
-
         authStage.setScene(scene);
         authStage.initModality(Modality.WINDOW_MODAL);
         authStage.initOwner(primaryStage);
-        authStage.setTitle("Authentication!");
-   //     authStage.setY(1400);
-   //     authStage.setX(650);
         authStage.setAlwaysOnTop(true);
         authStage.show();
 
-        SignController signController = authLoader.getController();
-
+        signController = authLoader.getController();
         signController.setNetwork(network);
         signController.setStartClient(this);
     }
@@ -57,11 +53,7 @@ public class StartClient extends Application {
         Scene scene = new Scene(fxmlLoader.load(), 600, 400);
 
         primaryStage.setScene(scene);
-    //    primaryStage.setY(1400);
-    //    primaryStage.setX(650);
         primaryStage.setAlwaysOnTop(true);
-//        primaryStage.show();
-
 
         chatController = fxmlLoader.getController();
         chatController.setNetwork(network);
@@ -85,12 +77,15 @@ public class StartClient extends Application {
         alert.show();
     }
 
+    /*
     public void showInfoAlert(String title, String infoMessage) {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle(title);
         alert.setHeaderText(infoMessage);
         alert.show();
     }
+
+     */
 
     public static void main(String[] args) {
         launch();

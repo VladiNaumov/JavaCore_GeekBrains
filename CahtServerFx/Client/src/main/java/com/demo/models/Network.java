@@ -26,6 +26,7 @@ public class Network {
     private final int port;
     private DataOutputStream out;
     private DataInputStream in;
+
     private ChatController chatController;
     private String username;
     private StartClient startClient;
@@ -54,6 +55,7 @@ public class Network {
         }
     }
 
+    // отправка сообщение об ошибки
     public void sendMessage(String message) {
         try {
             out.writeUTF(String.format("%s %s", CLIENT_MSG_CMD_PREFIX, message));
@@ -140,6 +142,21 @@ public class Network {
         t.start();
     }
 
+
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setStartClient(StartClient startClient) {
+        this.startClient = startClient;
+    }
+
+    /*
+    public StartClient getStartClient() {
+        return startClient;
+    }
+
     public DataOutputStream getOut() {
         return out;
     }
@@ -156,15 +173,5 @@ public class Network {
         this.in = in;
     }
 
-    public String getUsername() {
-        return username;
-    }
-
-    public void setStartClient(StartClient startClient) {
-        this.startClient = startClient;
-    }
-
-    public StartClient getStartClient() {
-        return startClient;
-    }
+     */
 }
