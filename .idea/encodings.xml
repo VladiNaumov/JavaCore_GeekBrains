@@ -3,6 +3,10 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/CahtServerFx/Client/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/CahtServerFx/Client/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CahtServerFx/MiniChat/MiniClient/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CahtServerFx/MiniChat/MiniClient/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CahtServerFx/MiniChat/MiniServer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CahtServerFx/MiniChat/MiniServer/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/CahtServerFx/MiniClient/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/CahtServerFx/MiniClient/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/CahtServerFx/MiniServer/src/main/java" charset="UTF-8" />

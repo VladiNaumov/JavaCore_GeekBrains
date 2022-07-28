@@ -10,8 +10,13 @@
         <option value="$PROJECT_DIR$/MoreNext/pom.xml" />
         <option value="$PROJECT_DIR$/CahtServerFx/DemoClient_/pom.xml" />
         <option value="$PROJECT_DIR$/CahtServerFx/DemoClient/pom.xml" />
-        <option value="$PROJECT_DIR$/CahtServerFx/MiniServer/pom.xml" />
+        <option value="$PROJECT_DIR$/CahtServerFx/MiniChat/MiniServer/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/CahtServerFx/MiniClient/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
