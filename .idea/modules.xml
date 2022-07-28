@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/JavaGeekBrainsNaumDeveloper.iml" filepath="$PROJECT_DIR$/JavaGeekBrainsNaumDeveloper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaCore_GeekBrains.iml" filepath="$PROJECT_DIR$/JavaCore_GeekBrains.iml" />
     </modules>
   </component>
 </project>
