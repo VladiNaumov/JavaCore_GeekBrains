@@ -11,8 +11,9 @@
     <modules>
         <module>Server</module>
         <module>Client</module>
-        <module>DemoServer</module>
-    </modules>
+        <module>MiniServer</module>
+        <module>MiniClient</module>
+     </modules>
     <name>ChatServer</name>
 
     <properties>
