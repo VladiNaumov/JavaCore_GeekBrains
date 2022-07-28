@@ -10,9 +10,9 @@
         <module name="MoreNext" />
         <module name="MiniClient" />
         <module name="Server" />
-        <module name="Client" />
         <module name="MiniServer" />
         <module name="JavaCore" />
+        <module name="Client" />
       </profile>
     </annotationProcessing>
   </component>
