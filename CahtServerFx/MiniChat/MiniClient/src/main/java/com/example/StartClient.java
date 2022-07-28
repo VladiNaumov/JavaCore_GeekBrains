@@ -1,8 +1,6 @@
 package com.example;
 
 
-import com.example.controllers.ChatController;
-import com.example.models.Network;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;

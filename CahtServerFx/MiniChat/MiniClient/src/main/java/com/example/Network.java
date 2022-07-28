@@ -1,7 +1,7 @@
-package com.example.models;
+package com.example;
 
 
-import com.example.controllers.ChatController;
+import com.example.ChatController;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
