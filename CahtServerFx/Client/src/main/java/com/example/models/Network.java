@@ -1,14 +1,13 @@
-package com.demo.models;
+package com.example.models;
 
-import com.demo.StartClient;
-import com.demo.controllers.ChatController;
+import com.example.StartClient;
+import com.example.controllers.ChatController;
 import javafx.application.Platform;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
-import java.util.concurrent.ThreadLocalRandom;
 
 public class Network {
     private static final String AUTH_CMD_PREFIX = "/auth"; // + login + password

@@ -1,7 +1,7 @@
-package com.demo.controllers;
+package com.example.controllers;
 
-import com.demo.StartClient;
-import com.demo.models.Network;
+import com.example.StartClient;
+import com.example.models.Network;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;

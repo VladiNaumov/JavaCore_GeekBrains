@@ -1,4 +1,4 @@
-package demoServer;
+package com.example;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;

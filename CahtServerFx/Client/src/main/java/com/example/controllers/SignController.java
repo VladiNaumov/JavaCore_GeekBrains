@@ -1,10 +1,7 @@
-package com.demo.controllers;
+package com.example.controllers;
 
-import java.net.URL;
-import java.util.ResourceBundle;
-
-import com.demo.StartClient;
-import com.demo.models.Network;
+import com.example.StartClient;
+import com.example.models.Network;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.PasswordField;

@@ -3,9 +3,15 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/CahtServerFx/Client/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/CahtServerFx/Client/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CahtServerFx/DemoClient/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CahtServerFx/DemoClient/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CahtServerFx/DemoServer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CahtServerFx/DemoServer/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/CahtServerFx/Server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/CahtServerFx/Server/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/CahtServerFx/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/CahtServerFx/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/DemoClient/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/DemoClient/src/main/resources" charset="UTF-8" />
   </component>
 </project>

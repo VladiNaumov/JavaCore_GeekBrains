@@ -1,8 +1,8 @@
-package com.demo;
+package com.example;
 
-import com.demo.controllers.ChatController;
-import com.demo.controllers.SignController;
-import com.demo.models.Network;
+import com.example.controllers.ChatController;
+import com.example.controllers.SignController;
+import com.example.models.Network;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
