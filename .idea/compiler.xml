@@ -9,9 +9,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="MoreNext" />
         <module name="MiniClient" />
-        <module name="Server" />
-        <module name="MiniServer" />
         <module name="JavaCore" />
+        <module name="MiniServer_" />
         <module name="MiniClientFx" />
       </profile>
     </annotationProcessing>
@@ -22,6 +21,8 @@
       <module name="demo" target="17" />
       <module name="DemoClientFx" target="17" />
       <module name="DemoVlient_" target="17" />
+      <module name="MiniServer" target="17" />
+      <module name="Server" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>
