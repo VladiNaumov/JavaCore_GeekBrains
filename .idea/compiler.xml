@@ -8,6 +8,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="MoreNext" />
+        <module name="MiniClient" />
+        <module name="MiniServer" />
+        <module name="ServerCore" />
+        <module name="MiniClientFx" />
         <module name="JavaCore" />
       </profile>
     </annotationProcessing>
@@ -19,12 +23,8 @@
       <module name="DemoClientFx" target="17" />
       <module name="DemoVlient_" target="17" />
       <module name="JavaCoreGb" target="17" />
-      <module name="MiniClient" target="17" />
-      <module name="MiniClientFx" target="17" />
-      <module name="MiniServer" target="17" />
       <module name="MiniServer_" target="17" />
       <module name="Server" target="17" />
-      <module name="ServerCore" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>
