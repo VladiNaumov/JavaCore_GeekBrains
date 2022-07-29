@@ -11,8 +11,14 @@
         <module name="MiniClient" />
         <module name="MiniServer" />
         <module name="ServerCore" />
-        <module name="MiniClientFx" />
         <module name="JavaCore" />
+        <module name="MiniClientFx" />
+      </profile>
+      <profile name="Annotation profile for JavaCore_GeekBrains" enabled="true">
+        <sourceOutputDir name="../../ClientFx/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../../ClientFx/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ClientFx" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
