@@ -4,10 +4,8 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/JavaCore/pom.xml" />
         <option value="$PROJECT_DIR$/CahtServerFx/pom.xml" />
         <option value="$PROJECT_DIR$/CahtServerFx/Client/pom.xml" />
-        <option value="$PROJECT_DIR$/MoreNext/pom.xml" />
         <option value="$PROJECT_DIR$/CahtServerFx/DemoClient_/pom.xml" />
         <option value="$PROJECT_DIR$/CahtServerFx/DemoClient/pom.xml" />
         <option value="$PROJECT_DIR$/CahtServerFx/MiniChat/MiniServer/pom.xml" />
@@ -18,10 +16,8 @@
         <option value="$PROJECT_DIR$/ChatServer/DemoClient_/pom.xml" />
         <option value="$PROJECT_DIR$/ChatServer/MiniClientFx/pom.xml" />
         <option value="$PROJECT_DIR$/ChatServer/ClientFx/pom.xml" />
-        <option value="$PROJECT_DIR$/MiniClient/pom.xml" />
-        <option value="$PROJECT_DIR$/MiniClientFx/pom.xml" />
         <option value="$PROJECT_DIR$/DemoServer/pom.xml" />
-        <option value="$PROJECT_DIR$/MiniServer_/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
