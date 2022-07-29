@@ -1,4 +1,6 @@
-/CahtServerFx/Server/target/
-/CahtServerFx/Client/target/
-/JavaCore/target/
+/MiniClient/target/
+/MiniServer/target/
+/MiniClientFx/target/
 /MoreNext/target/
+/ServerCore/target/
+/JavaCore/target/
