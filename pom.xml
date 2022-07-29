@@ -11,8 +11,9 @@
     <modules>
         <module>JavaCore</module>
         <module>MoreNext</module>
-        <module>FxClient</module>
-        <module>ChatServer/MiniClient</module>
+
+        <module>ChatServer/FxClient</module>
+        <module>ChatServer/CoreClient</module>
         <module>ChatServer/MiniServer</module>
         <module>ChatServer/ServerCore</module>
         <module>ChatServer/MiniClientFx</module>

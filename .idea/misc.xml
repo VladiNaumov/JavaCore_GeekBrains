@@ -29,6 +29,7 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/ChatServer/ClientFx/pom.xml" />
+        <option value="$PROJECT_DIR$/ChatServer/CoreiClient/pom.xml" />
         <option value="$PROJECT_DIR$/MiniServer/pom.xml" />
       </set>
     </option>
