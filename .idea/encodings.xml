@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/CahtServerFx/Client/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/CahtServerFx/Client/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/CahtServerFx/MiniChat/MiniClient/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/CahtServerFx/MiniChat/MiniClient/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/CahtServerFx/MiniChat/MiniServer/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/CahtServerFx/MiniChat/MiniServer/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/CahtServerFx/MiniClient/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/CahtServerFx/MiniClient/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/CahtServerFx/MiniServer/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/CahtServerFx/MiniServer/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/CahtServerFx/Server/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/CahtServerFx/Server/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/CahtServerFx/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/CahtServerFx/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ChatServer/Client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ChatServer/Client/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ChatServer/ClientFx/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ChatServer/ClientFx/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ChatServer/MiniClient/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ChatServer/MiniClient/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ChatServer/MiniClientFx/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ChatServer/MiniClientFx/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ChatServer/MiniServer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ChatServer/MiniServer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ChatServer/Server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ChatServer/Server/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ChatServer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ChatServer/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/DemoClient/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/DemoClient/src/main/resources" charset="UTF-8" />
   </component>

@@ -16,7 +16,7 @@ public class Server {
     ServerSocket serverSocket;
 
     public Server() {
-        this.clients = new ArrayList<>();
+        clients = new ArrayList<>();
 
         try {
             serverSocket = new ServerSocket(port);

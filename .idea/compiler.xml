@@ -12,7 +12,13 @@
         <module name="Server" />
         <module name="MiniServer" />
         <module name="JavaCore" />
-        <module name="Client" />
+        <module name="MiniClientFx" />
+      </profile>
+      <profile name="Annotation profile for ChatServer" enabled="true">
+        <sourceOutputDir name="../Client/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../Client/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ClientFx" />
       </profile>
     </annotationProcessing>
   </component>

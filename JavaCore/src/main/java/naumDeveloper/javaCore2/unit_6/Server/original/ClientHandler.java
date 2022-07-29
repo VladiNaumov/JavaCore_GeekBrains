@@ -26,7 +26,7 @@ public class ClientHandler {
 
 
         /*создание отдельного потока подключения к серверу * (Multi eho server)*/
-        new Thread(() -> {
+         new Thread(() -> {
 
             while (true) {
 
