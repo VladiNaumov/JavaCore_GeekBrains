@@ -19,6 +19,8 @@
       <module name="ClientFx" target="17" />
       <module name="ClientFxFull" target="17" />
       <module name="demo" target="17" />
+      <module name="DemoClientFx" target="17" />
+      <module name="DemoVlient_" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>
