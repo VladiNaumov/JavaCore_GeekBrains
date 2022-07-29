@@ -12,6 +12,7 @@
         <module name="MiniServer" />
         <module name="ServerCore" />
         <module name="JavaCore" />
+        <module name="JavaCoreGb" />
         <module name="MiniClientFx" />
       </profile>
       <profile name="Annotation profile for JavaCore_GeekBrains" enabled="true">
@@ -28,7 +29,6 @@
       <module name="demo" target="17" />
       <module name="DemoClientFx" target="17" />
       <module name="DemoVlient_" target="17" />
-      <module name="JavaCoreGb" target="17" />
       <module name="MiniServer_" target="17" />
       <module name="Server" target="17" />
     </bytecodeTargetLevel>
