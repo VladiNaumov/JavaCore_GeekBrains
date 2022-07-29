@@ -9,8 +9,9 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>JavaCoreGb</module>
+        <module>JavaCore</module>
         <module>MoreNext</module>
+        <module>FxClient</module>
         <module>ChatServer/MiniClient</module>
         <module>ChatServer/MiniServer</module>
         <module>ChatServer/ServerCore</module>

@@ -12,6 +12,7 @@
         <module name="MiniServer" />
         <module name="ServerCore" />
         <module name="JavaCore" />
+        <module name="FxClient" />
         <module name="JavaCoreGb" />
         <module name="MiniClientFx" />
       </profile>

@@ -21,6 +21,9 @@
         <option value="$PROJECT_DIR$/ClientFx/pom.xml" />
         <option value="$PROJECT_DIR$/MiniClientFx/pom.xml" />
         <option value="$PROJECT_DIR$/JavaCore/pom.xml" />
+        <option value="$PROJECT_DIR$/JavaCoreGb/pom.xml" />
+        <option value="$PROJECT_DIR$/FxClient/pom.xml" />
+        <option value="$PROJECT_DIR$/ChatServer/FxClient/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
