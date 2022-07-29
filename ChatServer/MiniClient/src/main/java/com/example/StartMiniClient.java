@@ -1,6 +1,6 @@
 package com.example;
 
-public class ClientMain {
+public class StartMiniClient {
     public static void main(String[] args) {
 
        new Client();

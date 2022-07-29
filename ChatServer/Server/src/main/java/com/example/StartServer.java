@@ -2,11 +2,10 @@ package com.example;
 
 
 import com.example.server.MyServer;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.Properties;
 
-public class ServerApp {
+import java.io.IOException;
+
+public class StartServer {
 
     private static final int DEFAULT_PORT = 8186;
     private static String configsFile = "src/main/resources/configs/application-dev.properties";

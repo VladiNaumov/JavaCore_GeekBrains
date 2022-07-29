@@ -10,7 +10,6 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>Server</module>
-        <module>ClientFx</module>
         <module>MiniServer</module>
         <module>MiniClientFx</module>
         <module>MiniClient</module>
@@ -77,7 +76,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.example.chatserver/com.example.chatserver.HelloApplication</mainClass>
+                            <mainClass>com.example.chatserver/com.example.StartClientFX</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>

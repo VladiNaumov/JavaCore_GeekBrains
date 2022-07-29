@@ -7,7 +7,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.Scanner;
 
-public class DemoServer {
+public class StartMiniServer {
 
     /*реализация простого сервера с возможностью подключения нескольких клиентов и отправки сообчения с сервера клиенту*/
 
