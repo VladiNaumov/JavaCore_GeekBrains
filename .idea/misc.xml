@@ -18,6 +18,10 @@
         <option value="$PROJECT_DIR$/ChatServer/DemoClient_/pom.xml" />
         <option value="$PROJECT_DIR$/ChatServer/MiniClientFx/pom.xml" />
         <option value="$PROJECT_DIR$/ChatServer/ClientFx/pom.xml" />
+        <option value="$PROJECT_DIR$/MiniClient/pom.xml" />
+        <option value="$PROJECT_DIR$/MiniClientFx/pom.xml" />
+        <option value="$PROJECT_DIR$/MiniServer/pom.xml" />
+        <option value="$PROJECT_DIR$/Server/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
