@@ -7,7 +7,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="JavaCore_GeekBrains" />
+        <module name="MoreNext" />
+        <module name="JavaCore" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -17,13 +18,13 @@
       <module name="demo" target="17" />
       <module name="DemoClientFx" target="17" />
       <module name="DemoVlient_" target="17" />
-      <module name="JavaCore" target="1.8" />
+      <module name="JavaCoreGb" target="17" />
       <module name="MiniClient" target="17" />
       <module name="MiniClientFx" target="17" />
       <module name="MiniServer" target="17" />
       <module name="MiniServer_" target="17" />
-      <module name="MoreNext" target="17" />
       <module name="Server" target="17" />
+      <module name="ServerCore" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>
