@@ -5,14 +5,12 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
 
+/* Класс отвечающий за создание отдельного потока подключения к серверу, для подключения к серверу нескольких клиентов  */
 public class ClientHandler {
-    /* Класс отвечающий за авторизацию клеента к сервера и создание отдельного потока подключения к серверу */
     private Server server;
     private Socket clientSocket;
     private DataInputStream in;
     private DataOutputStream out;
-    private String username;
-    private boolean on = true;
 
     public ClientHandler(Server server, Socket socket) throws IOException {
         this.server = server;
@@ -23,7 +21,7 @@ public class ClientHandler {
         out = new DataOutputStream(clientSocket.getOutputStream());
 
 
-        /*создание отдельного потока подключения к серверу * (Multi eho server)*/
+        /*создание отдельного потока подключения к серверу */
         new Thread(() -> {
 
             while (true) {
@@ -32,8 +30,11 @@ public class ClientHandler {
                 try {
                     msg = in.readUTF();
                     out.writeUTF("Echo: " + msg);
+
                 } catch (IOException e) {
-                    throw new RuntimeException(e);
+                    e.printStackTrace();
+                } finally {
+                    disconnect();
                 }
 
                 System.out.println("client wrote " + msg);
@@ -42,6 +43,17 @@ public class ClientHandler {
 
 
         }).start();
+    }
+
+    public void disconnect() {
+
+        if (clientSocket != null) {
+            try {
+                clientSocket.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
 }

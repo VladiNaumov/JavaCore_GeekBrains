@@ -18,8 +18,6 @@ public class Client {
             // Создаём подключение
             System.out.println("Socket is starting up... ");
             socket = new Socket("localhost",8189);
-            //  System.out.println(socket);
-
             input = new DataInputStream(socket.getInputStream());
             output = new DataOutputStream(socket.getOutputStream());
 
@@ -50,7 +48,12 @@ public class Client {
                     break;
                 }
                 System.out.println("Please type in a message .... ");
-                output.writeUTF(scanner.nextLine()); // отправка сообщений
+                // отправка сообщений
+                output.writeUTF(scanner.nextLine());
+
+                //получение сообщений
+                String msn = input.readUTF();
+                System.out.println("> " + msn);
 
             }
         } catch (IOException e) {

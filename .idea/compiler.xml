@@ -12,7 +12,6 @@
         <module name="ServerCore" />
         <module name="JavaCore" />
         <module name="FxClient" />
-        <module name="JavaCoreGb" />
         <module name="CoreClient" />
         <module name="MiniClientFx" />
       </profile>
@@ -31,6 +30,7 @@
       <module name="demo" target="17" />
       <module name="DemoClientFx" target="17" />
       <module name="DemoVlient_" target="17" />
+      <module name="JavaCoreGb" target="17" />
       <module name="MiniServer_" target="17" />
       <module name="Server" target="17" />
     </bytecodeTargetLevel>
