@@ -12,7 +12,6 @@ public class Server {
     private int port = 8189;
     private List<ClientHandler> clients;
 
-    private ClientHandler clientHandler;
     private Socket clientSocket;
     private ServerSocket serverSocket;
     private DataInputStream in;
@@ -29,8 +28,8 @@ public class Server {
                 clientSocket = serverSocket.accept();
                 System.out.println("Клиент подключился " + port);
 
-                clientHandler = new ClientHandler(this, clientSocket);
-                 subscribe(clientHandler);
+                 new ClientHandler(this, clientSocket);
+                 //subscribe(new ClientHandler(this,clientSocket ));
                  //ClientHandler(clientSocket);
             }
         } catch (IOException e) {
