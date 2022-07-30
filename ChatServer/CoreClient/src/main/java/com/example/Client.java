@@ -17,7 +17,7 @@ public class Client {
         try {
             // Создаём подключение
             System.out.println("Socket is starting up... ");
-            socket = new Socket("localhost",8186);
+            socket = new Socket("localhost",8189);
             input = new DataInputStream(socket.getInputStream());
             output = new DataOutputStream(socket.getOutputStream());
 

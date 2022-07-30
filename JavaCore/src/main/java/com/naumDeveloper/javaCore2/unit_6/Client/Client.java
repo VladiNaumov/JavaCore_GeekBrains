@@ -50,12 +50,8 @@ public class Client {
                 System.out.println("Please type in a message .... ");
                 // отправка сообщений
                 output.writeUTF(scanner.nextLine());
+              }
 
-                //получение сообщений
-                String msn = input.readUTF();
-                System.out.println("> " + msn);
-
-            }
         } catch (IOException e) {
             e.printStackTrace();
         } finally {

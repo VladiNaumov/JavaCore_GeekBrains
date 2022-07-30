@@ -5,55 +5,54 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
 
-/* Класс отвечающий за создание отдельного потока подключения к серверу, для подключения к серверу нескольких клиентов  */
 public class ClientHandler {
     private Server server;
-    private Socket clientSocket;
+    private Socket socket;
     private DataInputStream in;
     private DataOutputStream out;
+    private String username;
+
+    public String getUsername() {
+        return username;
+    }
 
     public ClientHandler(Server server, Socket socket) throws IOException {
         this.server = server;
-        this.clientSocket = socket;
+        this.socket = socket;
         this.in = new DataInputStream(socket.getInputStream());
         this.out = new DataOutputStream(socket.getOutputStream());
-        in = new DataInputStream(clientSocket.getInputStream());
-        out = new DataOutputStream(clientSocket.getOutputStream());
 
-
-        /*создание отдельного потока подключения к серверу */
         new Thread(() -> {
+            try {
 
-            while (true) {
-
-                String msg = null;
-                try {
-                    msg = in.readUTF();
-                    out.writeUTF("Echo: " + msg);
-
-                } catch (IOException e) {
-                    e.printStackTrace();
-                } finally {
-                    disconnect();
+                // Цикл общения с клиентом
+                while (true) {
+                    //получение сообщения от клиента
+                    String msg = in.readUTF();
+                    System.out.println(msg);
+                    // отправка сообщение клиенту
+                    out.writeUTF("ECHO: " + msg);
                 }
-
-                System.out.println("client wrote " + msg);
-
+            } catch (IOException e) {
+                e.printStackTrace();
+            } finally {
+                disconnect();
             }
-
-
         }).start();
     }
 
-    public void disconnect() {
+    public void sendMessage(String message) throws IOException {
+        out.writeUTF(message);
+    }
 
-        if (clientSocket != null) {
+    public void disconnect() {
+        server.unsubscribe(this);
+        if (socket != null) {
             try {
-                clientSocket.close();
+                socket.close();
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
     }
-
 }

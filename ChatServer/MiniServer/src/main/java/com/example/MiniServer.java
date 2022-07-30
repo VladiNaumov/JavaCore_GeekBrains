@@ -10,7 +10,7 @@ import java.util.Scanner;
 /*реализация простого сервера с возможностью подключения нескольких клиентов и отправки сообчения с сервера клиенту*/
 public class MiniServer {
     private String AUTH = "/auth"; // + login + password
-    private int SERVER_PORT = 8186;
+    private int SERVER_PORT = 8189;
     private DataInputStream in;
     private  DataOutputStream out;
     private Socket clientSocket;
